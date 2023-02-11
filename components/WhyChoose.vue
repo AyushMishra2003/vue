@@ -1,7 +1,7 @@
 <template>
-  <main class="my-5 pb-5">
+  <main class="my-5 pb-4 pb-md-5">
     <section class="container">
-      <h2 class="fw-bold text-center has_logo_color">Why Choose UCS Cab?</h2>
+      <h2 class="fw-bold text-md-center has_logo_color">Why Choose UCS Cab?</h2>
       <div class="row row-cols-2 row-cols-md-4 g-3 mt-3 mt-md-4">
         <div class="col">
           <div class="card">

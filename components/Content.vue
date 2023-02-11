@@ -1,10 +1,10 @@
 <template>
   <div>
-    <section class="container my-5 pb-5">
-      <h2 class="fw-bold has_logo_color text-center">
+    <section class="container my-5 pb-4 pb-md-5">
+      <h2 class="fw-bold has_logo_color text-md-center">
         UCS Cab: <span class="fst-italic has_logo_color">Aao Chalein!</span>
       </h2>
-      <h3 class="mt-5 fw-bold">Hit The Road With UCS Cab Services:</h3>
+      <h3 class="mt-4 mt-md-5 fw-bold">Hit The Road With UCS Cab Services:</h3>
       <p class="mt-4">
         UCS is one of the leading car rental and taxi booking companies in
         Uttarakhand offering top-grade services. We make your commutes and

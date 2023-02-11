@@ -1,7 +1,7 @@
 <template>
-  <div class="my-5 pb-5">
+  <div class="my-5 pb-4 pb-md-5">
     <section class="container">
-      <h2 class="fw-bold text-center has_logo_color">
+      <h2 class="fw-bold text-md-center has_logo_color">
         The Best Feeling in the Drive
       </h2>
       <img

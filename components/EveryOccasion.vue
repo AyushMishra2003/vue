@@ -1,5 +1,5 @@
 <template>
-  <div class="container my-5 pt-4 pb-5">
+  <div class="container my-5 py-3 pt-md-4 pb-md-5">
     <h2 class="fw-bold">A car for every occasion</h2>
     <p>
       We offer domestic cabs, SUVs for outstation and city-taxi at best rates in

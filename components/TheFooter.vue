@@ -19,29 +19,32 @@
             ></small
           >
         </div>
-        <div class="col-md-3">
+        <div class="col-md-3 mt-4 mt-md-0">
           <h5 class="text-white text-uppercase fw-bold">Quick Links</h5>
           <ul class="list-unstyled mt-3 lh-lg">
             <li>
               <NuxtLink to="/">Home</NuxtLink>
             </li>
-            <li><a href="#">About Us</a></li>
+            <li><NuxtLink to="#">About Us</NuxtLink></li>
             <li><a href="#">Contact Us</a></li>
-            <li><a href="#">Rate Chart</a></li>
+            <li>
+              <NuxtLink to="/packages/chardham-yatra-2023/"
+                >Chardham Yatra 2023</NuxtLink
+              >
+            </li>
           </ul>
         </div>
-        <div class="col-md-3">
+        <div class="col-md-3 mt-4 mt-md-0">
           <h5 class="text-white text-uppercase fw-bold">Services</h5>
           <ul class="list-unstyled mt-3 lh-lg">
             <li><a href="#">Local Car Rental</a></li>
             <li><a href="#">Outstation Car Rental</a></li>
             <li><a href="#">Corporate Car Rental</a></li>
-            <li><a href="#">Wedding/Event/Conference</a></li>
+
             <li><a href="#">Airport/Railway Stn./Employee Transfer</a></li>
-            <li><a href="#">Car Rental on Monthly Basis</a></li>
           </ul>
         </div>
-        <div class="col-md-3">
+        <div class="col-md-3 mt-4 mt-md-0">
           <h5 class="text-white text-uppercase fw-bold">Get in Touch</h5>
           <ul class="list-unstyled mt-3 lh-lg">
             <li><a href="#">Contact Us</a></li>

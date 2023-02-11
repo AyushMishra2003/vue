@@ -59,25 +59,37 @@
                     >Corporate Car Rental</NuxtLink
                   >
                 </li>
-                <li>
-                  <NuxtLink class="dropdown-item services_item" to="#"
-                    >Wedding/Event/Conference</NuxtLink
-                  >
-                </li>
+
                 <li>
                   <NuxtLink class="dropdown-item services_item" to="#"
                     >Airport/Railway Stn./Employee Transfer
                   </NuxtLink>
                 </li>
-                <li>
-                  <NuxtLink class="dropdown-item services_item" to="#"
-                    >Car Rental on Monthly Basis
-                  </NuxtLink>
-                </li>
               </ul>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Rate Chart</a>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdownMenuLink2"
+                role="button"
+                data-mdb-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Packages
+              </a>
+              <ul
+                class="dropdown-menu services_menu"
+                aria-labelledby="navbarDropdownMenuLink2"
+              >
+                <li>
+                  <NuxtLink
+                    class="dropdown-item services_item"
+                    to="/packages/chardham-yatra-2023/"
+                    >Chardham Yatra 2023</NuxtLink
+                  >
+                </li>
+              </ul>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Contact Us</a>
