@@ -3,7 +3,7 @@
     <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
       <div class="container">
         <NuxtLink class="navbar-brand" to="/"
-          ><img
+          ><nuxt-img preset="cover"
             src="/img/logo/logo.png"
             alt="Logo"
             class="img-fluid"

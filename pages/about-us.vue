@@ -31,7 +31,7 @@
           </p>
         </div>
         <div class="col-md-6">
-          <img src="/img/about.svg" alt="" class="img-fluid" width="80%" />
+          <nuxt-img preset="cover" src="/img/about.svg" alt="" class="img-fluid" width="80%" />
         </div>
       </div>
     </section>
@@ -39,7 +39,7 @@
     <section class="container my-5 pb-5">
       <div class="row">
         <div class="col-md-6">
-          <img src="/img/about2.svg" alt="" class="img-fluid" width="80%" />
+          <nuxt-img preset="cover" src="/img/about2.svg" alt="" class="img-fluid" width="80%" />
         </div>
         <div class="col-md-6">
           <p>

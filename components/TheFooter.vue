@@ -3,7 +3,7 @@
     <section class="container-fluid px-md-5">
       <div class="row">
         <div class="col-md-3">
-          <img
+          <nuxt-img preset="cover"
             src="/img/logo/logo2.png"
             alt="Logo2"
             class="img-fluid"
@@ -79,7 +79,7 @@
         href="https://wa.me/+919520801801"
         class="whatsapp_float"
         target="_blank"
-        ><img src="/whatsapp.webp" alt="WhatsApp icon" class="img-fluid"
+        ><nuxt-img preset="cover" src="/whatsapp.webp" alt="WhatsApp icon" class="img-fluid"
       /></a>
     </section>
   </footer>

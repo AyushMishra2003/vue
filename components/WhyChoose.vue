@@ -5,7 +5,7 @@
       <div class="row row-cols-2 row-cols-md-4 g-3 mt-3 mt-md-4">
         <div class="col">
           <div class="card">
-            <img src="/img/why/cars.webp" class="card-img-top" alt="Car" />
+            <nuxt-img preset="cover" src="/img/why/cars.webp" class="card-img-top" alt="Car" />
             <div class="card-body">
               <h5 class="card-title">Variety of Cars</h5>
               <p class="card-text d-none d-md-block">
@@ -17,7 +17,7 @@
         </div>
         <div class="col">
           <div class="card">
-            <img
+            <nuxt-img preset="cover"
               src="/img/why/pocket-friendly.webp"
               class="card-img-top"
               alt=""
@@ -33,7 +33,7 @@
         </div>
         <div class="col">
           <div class="card">
-            <img src="/img/why/safe.webp" class="card-img-top" alt="" />
+            <nuxt-img preset="cover" src="/img/why/safe.webp" class="card-img-top" alt="" />
             <div class="card-body">
               <h5 class="card-title">Secured &amp; Safe Rides</h5>
               <p class="card-text d-none d-md-block">
@@ -45,7 +45,7 @@
         </div>
         <div class="col">
           <div class="card">
-            <img
+            <nuxt-img preset="cover"
               src="/img/why/skilled-driver.webp"
               class="card-img-top"
               alt=""
@@ -62,7 +62,7 @@
 
         <div class="col">
           <div class="card">
-            <img src="/img/why/clean.jpg" class="card-img-top" alt="" />
+            <nuxt-img preset="cover" src="/img/why/clean.jpg" class="card-img-top" alt="" />
             <div class="card-body">
               <h5 class="card-title">Well Maintained Car</h5>
               <p class="card-text d-none d-md-block">
@@ -74,7 +74,7 @@
         </div>
         <div class="col">
           <div class="card">
-            <img src="/img/why/puntual.jpg" class="card-img-top" alt="" />
+            <nuxt-img preset="cover" src="/img/why/puntual.jpg" class="card-img-top" alt="" />
             <div class="card-body">
               <h5 class="card-title">On Time Punctuality</h5>
               <p class="card-text d-none d-md-block">
@@ -86,7 +86,7 @@
         </div>
         <div class="col">
           <div class="card shadow">
-            <img src="/img/why/sanistised.jpg" class="card-img-top" alt="" />
+            <nuxt-img preset="cover" src="/img/why/sanistised.jpg" class="card-img-top" alt="" />
             <div class="card-body">
               <h5 class="card-title">Cleaned & Sanitised Car</h5>
               <p class="card-text d-none d-md-block">
@@ -98,7 +98,7 @@
         </div>
         <div class="col">
           <div class="card shadow">
-            <img
+            <nuxt-img preset="cover"
               src="/img/why/customer-support.jpg"
               class="card-img-top"
               alt=""

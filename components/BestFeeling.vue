@@ -4,7 +4,7 @@
       <h2 class="fw-bold text-md-center has_logo_color">
         The Best Feeling in the Drive
       </h2>
-      <img
+      <nuxt-img preset="cover"
         src="/img/infographic_2.webp"
         alt="Payment Steps"
         class="d-block mx-auto img-fluid mt-5"

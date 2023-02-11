@@ -78,7 +78,7 @@
             </p>
           </div>
           <div class="col-md-6">
-            <img
+            <nuxt-img preset="cover"
               src="/kedarnath.jpg"
               alt="Mountains"
               class="img-fluid rounded"

@@ -48,7 +48,7 @@
         hassle free use of our services. The payment gateway is conveniently
         integrated in the website for faster payment.
       </p>
-      <img
+      <nuxt-img preset="cover"
         src="/img/infographic_1.webp"
         alt="Payment Steps"
         class="d-block mx-auto img-fluid"

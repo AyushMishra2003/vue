@@ -8,7 +8,7 @@
     <div class="row row-cols-1 row-cols-md-3 g-3 g-md-4 mt-3">
       <div class="col">
         <div class="card">
-          <img
+          <nuxt-img preset="cover"
             src="/img/every-occasion/domestic.webp"
             class="card-img-top"
             alt="Domestic Cab"
@@ -28,7 +28,7 @@
       </div>
       <div class="col">
         <div class="card">
-          <img
+          <nuxt-img preset="cover"
             src="/img/every-occasion/outstation.webp"
             class="card-img-top"
             alt="Out-Station Cab"
@@ -48,7 +48,7 @@
       </div>
       <div class="col">
         <div class="card">
-          <img
+          <nuxt-img preset="cover"
             src="/img/every-occasion/rental.webp"
             class="card-img-top"
             alt="Rental Cab"

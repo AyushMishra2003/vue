@@ -33,7 +33,7 @@
     <div class="carousel-inner">
       <!-- Single item -->
       <div class="carousel-item active">
-        <img
+        <nuxt-img preset="cover"
           src="/img/slider/audi.webp"
           class="d-block w-100 slider_img"
           alt="Audi"
@@ -50,7 +50,7 @@
       </div>
       <!-- Single item -->
       <div class="carousel-item">
-        <img
+        <nuxt-img preset="cover"
           src="/img/slider/innova.webp"
           class="d-block w-100 slider_img"
           alt="Innova"
@@ -67,7 +67,7 @@
       </div>
       <!-- Single item -->
       <div class="carousel-item">
-        <img
+        <nuxt-img preset="cover"
           src="/img/slider/toyota.webp"
           class="d-block w-100 slider_img"
           alt="Toyota"
