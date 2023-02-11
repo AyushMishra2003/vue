@@ -68,36 +68,36 @@
       <h3 class="mt-5 fw-bold">Tick All the Boxes with UCS</h3>
       <ul class="list-unstyled mt-4">
         <li>
-          <i class="fa-solid fa-star me-2"></i> Experience Uttarakhand with
+          <i class="fa-solid fa-check me-2"></i> Experience Uttarakhand with
           inter city and intra city cab service.
         </li>
         <li>
-          <i class="fa-solid fa-star me-2"></i> Convenient local pickups and
+          <i class="fa-solid fa-check me-2"></i> Convenient local pickups and
           drops.
         </li>
         <li>
-          <i class="fa-solid fa-star me-2"></i> One-way or round trips according
-          to your preference.
+          <i class="fa-solid fa-check me-2"></i> One-way or round trips
+          according to your preference.
         </li>
         <li>
-          <i class="fa-solid fa-star me-2"></i> Packages that are easy on your
+          <i class="fa-solid fa-check me-2"></i> Packages that are easy on your
           pocket.
         </li>
         <li>
-          <i class="fa-solid fa-star me-2"></i> Simple cab-booking experience
+          <i class="fa-solid fa-check me-2"></i> Simple cab-booking experience
           with our user-friendly website.
         </li>
         <li>
-          <i class="fa-solid fa-star me-2"></i> 24*7 customer support with
+          <i class="fa-solid fa-check me-2"></i> 24*7 customer support with
           helpline number
           <a href="tel:+919520801801" target="_blank">+91 9520 801 801</a>
         </li>
         <li>
-          <i class="fa-solid fa-star me-2"></i> Temple tours and visiting
+          <i class="fa-solid fa-check me-2"></i> Temple tours and visiting
           hotspots with ease.
         </li>
         <li>
-          <i class="fa-solid fa-star me-2"></i> Punctuality maintained for
+          <i class="fa-solid fa-check me-2"></i> Punctuality maintained for
           airport pickup and drops requests.
         </li>
       </ul>
