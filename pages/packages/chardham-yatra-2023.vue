@@ -51,7 +51,12 @@
               </div>
               <div class="mb-md-3">
                 <label for="date" class="form-label"></label>
-                <input type="date" class="form-control" id="date" />
+                <input
+                  type="date"
+                  class="form-control"
+                  id="date"
+                  placeholder="dd/mm/yyyy"
+                />
               </div>
 
               <button
