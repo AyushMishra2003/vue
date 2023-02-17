@@ -81,7 +81,10 @@ export default {
   generate: { fallback: "404.html" },
 
   // Modules: https://go.nuxtjs.dev/config-modules
-  modules: ["@nuxtjs/sitemap"],
+  modules: [
+    "@nuxtjs/sitemap",
+    "@nuxtjs/axios"
+  ],
 
   // sitemap
   sitemap: {

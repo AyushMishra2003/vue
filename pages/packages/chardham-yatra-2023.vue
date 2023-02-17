@@ -8,69 +8,44 @@
             <p class="text-white display-6 text-capitalize">
               book hassle free chardham yatra 2023 with UCS Cab
             </p>
-            <a
-              href="tel:+919520801801"
-              class="btn btn-rounded fs-6"
-              target="_blank"
-              role="button"
-            >
+            <a href="tel:+919520801801" class="btn btn-rounded fs-6" target="_blank" role="button">
               <i class="fa-solid fa-phone me-1 text-white"></i> +91 95208 01801
             </a>
           </div>
           <div class="col-md-6 py-5">
-            <form class="bg-white rounded-7 p-5">
+            <form v-if="!submitted" class="bg-white rounded-7 p-5" @submit.prevent="submitEnquiryForm">
               <h3 class="text-dark text-center fw-bold fs-1">
                 Book Your Cab Now
               </h3>
               <div class="mb-md-3">
                 <label for="name" class="form-label"></label>
-                <input
-                  type="text"
-                  class="form-control"
-                  id="name"
-                  placeholder="Name"
-                />
+                <input v-model="form.name" type="text" class="form-control" id="name" placeholder="Name" />
               </div>
               <div class="mb-md-3">
                 <label for="email" class="form-label"></label>
-                <input
-                  type="email"
-                  class="form-control"
-                  id="email"
-                  placeholder="Email Address"
-                />
+                <input v-model="form.email" type="email" class="form-control" id="email" placeholder="Email Address" />
               </div>
               <div class="mb-md-3">
                 <label for="ph-number" class="form-label"></label>
-                <input
-                  type="text"
-                  class="form-control"
-                  id="ph-number"
-                  placeholder="Mobile Number"
-                />
+                <input v-model="form.phone_number" type="text" class="form-control" id="ph-number" placeholder="Mobile Number" />
               </div>
               <div class="mb-md-3">
                 <label for="date" class="form-label"></label>
-                <input
-                  type="date"
-                  class="form-control"
-                  id="date"
-                  placeholder="dd/mm/yyyy"
-                />
+                <input v-model="form.data.date" type="date" class="form-control" id="date" placeholder="dd/mm/yyyy" />
               </div>
 
-              <button
-                type="submit"
-                class="btn btn-primary d-block mx-auto btn-rounded fs-6 mt-4"
-              >
+              <button type="submit" class="btn btn-primary d-block mx-auto btn-rounded fs-6 mt-4">
                 Send Your Query
               </button>
             </form>
+            <div v-if="submitted">
+              Thanks Mate,
+              We will get back soion!
+            </div>
           </div>
         </div>
       </div>
     </section>
-
     <!-- why choose -->
     <section class="my-5 py-md-5 container">
       <h3 class="fw-bold">Why should you do Chardham Yatra?</h3>
@@ -108,12 +83,7 @@
         </li>
       </ul>
       <div class="text-center mt-5">
-        <a
-          href="tel:+919520801801"
-          class="btn btn-rounded fs-5"
-          target="_blank"
-          role="button"
-        >
+        <a href="tel:+919520801801" class="btn btn-rounded fs-5" target="_blank" role="button">
           <i class="fa-solid fa-phone me-1 text-white"></i> book now with UCS
           Cab
         </a>
@@ -137,22 +107,12 @@
             </p>
           </div>
           <div class="col-md-6">
-            <nuxt-img
-              preset="cover"
-              src="/kedarnath.jpg"
-              alt="Mountains"
-              class="img-fluid rounded"
-            />
+            <nuxt-img preset="cover" src="/kedarnath.jpg" alt="Mountains" class="img-fluid rounded" />
           </div>
         </div>
       </div>
       <div class="text-center mt-4">
-        <a
-          href="tel:+919520801801"
-          class="btn btn-rounded fs-5"
-          target="_blank"
-          role="button"
-        >
+        <a href="tel:+919520801801" class="btn btn-rounded fs-5" target="_blank" role="button">
           <i class="fa-solid fa-phone me-1 text-white"></i> book now with UCS
           Cab
         </a>
@@ -191,12 +151,7 @@
         </table>
       </div>
       <div class="text-center mt-5">
-        <a
-          href="tel:+919520801801"
-          class="btn btn-rounded fs-5"
-          target="_blank"
-          role="button"
-        >
+        <a href="tel:+919520801801" class="btn btn-rounded fs-5" target="_blank" role="button">
           <i class="fa-solid fa-phone me-1 text-white"></i> book now with UCS
           Cab
         </a>
@@ -206,7 +161,39 @@
 </template>
 
 <script>
-export default {};
+import axios from 'axios';
+
+
+export default {
+  data() {
+    return {
+      submitted: false,
+      form: {
+        "name": "",
+        "email": "",
+        "phone_number": "",
+        "query": "",
+        "data": {
+          "date": ""
+        }
+      },
+    };
+  },
+  methods: {
+    async submitEnquiryForm() {
+      let that = this;
+      await axios.post('http://localhost:8000/ucs/enquiry/', this.form)
+        .then(function (response) {
+          that.submitted = true;
+        })
+        .catch(function (error) {
+          alert("Error in Form")
+          that.submitted = false;
+        });
+    }
+  }
+
+};
 </script>
 
 <style scoped>
