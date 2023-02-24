@@ -3,7 +3,8 @@
     <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
       <div class="container">
         <NuxtLink class="navbar-brand" to="/"
-          ><nuxt-img preset="cover"
+          ><nuxt-img
+            preset="cover"
             src="/img/logo/logo.png"
             alt="Logo"
             class="img-fluid"
@@ -56,13 +57,13 @@
                 </li>
                 <li>
                   <NuxtLink class="dropdown-item services_item" to="#"
-                    >Corporate Car Rental</NuxtLink
+                    >Railway Station Transfer</NuxtLink
                   >
                 </li>
 
                 <li>
                   <NuxtLink class="dropdown-item services_item" to="#"
-                    >Airport/Railway Stn./Employee Transfer
+                    >Airport Transfer
                   </NuxtLink>
                 </li>
               </ul>
