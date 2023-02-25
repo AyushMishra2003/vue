@@ -46,23 +46,31 @@
                 aria-labelledby="navbarDropdownMenuLink"
               >
                 <li>
-                  <NuxtLink class="dropdown-item services_item" to="#"
+                  <NuxtLink
+                    class="dropdown-item services_item"
+                    to="/services/local-car-rental/"
                     >Local Car Rental</NuxtLink
                   >
                 </li>
                 <li>
-                  <NuxtLink class="dropdown-item services_item" to="#"
+                  <NuxtLink
+                    class="dropdown-item services_item"
+                    to="/services/outstation-car-rental/"
                     >Outstation Car Rental</NuxtLink
                   >
                 </li>
                 <li>
-                  <NuxtLink class="dropdown-item services_item" to="#"
+                  <NuxtLink
+                    class="dropdown-item services_item"
+                    to="/services/railway-transfer/"
                     >Railway Station Transfer</NuxtLink
                   >
                 </li>
 
                 <li>
-                  <NuxtLink class="dropdown-item services_item" to="#"
+                  <NuxtLink
+                    class="dropdown-item services_item"
+                    to="/services/airport-transfer/"
                     >Airport Transfer
                   </NuxtLink>
                 </li>

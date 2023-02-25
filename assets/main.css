@@ -87,3 +87,7 @@ a:hover {
   }
 }
 /* whatsapp */
+
+.nav-item .nuxt-link-exact-active {
+  text-decoration: underline;
+}
