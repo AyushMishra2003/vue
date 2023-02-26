@@ -69,7 +69,6 @@
                     type="date"
                     class="form-control"
                     id="date"
-                    placeholder="dd/mm/yyyy"
                     required
                   />
                 </div>
@@ -78,6 +77,7 @@
                 <p class="fs-5 is_color_primary">Choose Yatra</p>
                 <div class="form-check form-check-inline">
                   <input
+                    v-model="form.yatra_type"
                     class="form-check-input"
                     type="radio"
                     name="choose_yatra"
@@ -91,6 +91,7 @@
                 </div>
                 <div class="form-check form-check-inline">
                   <input
+                    v-model="form.yatra_type"
                     class="form-check-input"
                     type="radio"
                     name="choose_yatra"
@@ -104,6 +105,7 @@
                 </div>
                 <div class="form-check form-check-inline">
                   <input
+                    v-model="form.yatra_type"
                     class="form-check-input"
                     type="radio"
                     name="choose_yatra"
@@ -115,6 +117,7 @@
                 </div>
                 <div class="form-check form-check-inline">
                   <input
+                    v-model="form.yatra_type"
                     class="form-check-input"
                     type="radio"
                     name="choose_yatra"
@@ -132,6 +135,7 @@
                 </p>
                 <div class="form-check form-check-inline">
                   <input
+                    v-model="form.package"
                     class="form-check-input"
                     type="radio"
                     name="taxi_or_package"
@@ -143,6 +147,7 @@
                 </div>
                 <div class="form-check form-check-inline">
                   <input
+                    v-model="form.package"
                     class="form-check-input"
                     type="radio"
                     name="taxi_or_package"
@@ -157,6 +162,7 @@
               </div>
               <div class="mt-4">
                 <textarea
+                  v-model="form.query"
                   class="form-control"
                   id="textAreaExample"
                   rows="4"
@@ -343,6 +349,8 @@ export default {
         email: "",
         phone_number: "",
         query: "",
+        yatra_type: "",
+        package: "",
         data: {
           date: "",
         },
