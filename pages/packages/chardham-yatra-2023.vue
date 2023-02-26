@@ -26,51 +26,143 @@
               <h3 class="text-dark text-center fw-bold fs-1">
                 Book Your Cab Now
               </h3>
-              <div class="mb-md-3">
-                <label for="name" class="form-label"></label>
-                <input
-                  v-model="form.name"
-                  type="text"
-                  class="form-control"
-                  id="name"
-                  placeholder="Name"
-                  required
-                />
+              <div class="row">
+                <div class="col">
+                  <label for="name" class="form-label"></label>
+                  <input
+                    v-model="form.name"
+                    type="text"
+                    class="form-control"
+                    id="name"
+                    placeholder="Name"
+                    required
+                  />
+                </div>
+                <div class="col">
+                  <label for="email" class="form-label"></label>
+                  <input
+                    v-model="form.email"
+                    type="email"
+                    class="form-control"
+                    id="email"
+                    placeholder="Email Address"
+                    required
+                  />
+                </div>
               </div>
-              <div class="mb-md-3">
-                <label for="email" class="form-label"></label>
-                <input
-                  v-model="form.email"
-                  type="email"
-                  class="form-control"
-                  id="email"
-                  placeholder="Email Address"
-                  required
-                />
+              <div class="row">
+                <div class="col">
+                  <label for="ph-number" class="form-label"></label>
+                  <input
+                    v-model="form.phone_number"
+                    type="tel"
+                    class="form-control"
+                    id="ph-number"
+                    placeholder="Mobile Number"
+                    required
+                  />
+                </div>
+                <div class="col">
+                  <label for="date" class="form-label"></label>
+                  <input
+                    v-model="form.data.date"
+                    type="date"
+                    class="form-control"
+                    id="date"
+                    placeholder="dd/mm/yyyy"
+                    required
+                  />
+                </div>
               </div>
-              <div class="mb-md-3">
-                <label for="ph-number" class="form-label"></label>
-                <input
-                  v-model="form.phone_number"
-                  type="tel"
-                  class="form-control"
-                  id="ph-number"
-                  placeholder="Mobile Number"
-                  required
-                />
-              </div>
-              <div class="mb-md-3">
-                <label for="date" class="form-label"></label>
-                <input
-                  v-model="form.data.date"
-                  type="date"
-                  class="form-control"
-                  id="date"
-                  placeholder="dd/mm/yyyy"
-                  required
-                />
+              <div class="my-4">
+                <p class="fs-5 is_color_primary">Choose Yatra</p>
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="choose_yatra"
+                    id="chardham"
+                    value="chardham"
+                    required
+                  />
+                  <label class="form-check-label" for="chardham"
+                    >Char Dham</label
+                  >
+                </div>
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="choose_yatra"
+                    id="teendham"
+                    value="teendham"
+                    required
+                  />
+                  <label class="form-check-label" for="teendham"
+                    >Teen Dham</label
+                  >
+                </div>
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="choose_yatra"
+                    id="dodham"
+                    value="dodham"
+                    required
+                  />
+                  <label class="form-check-label" for="dodham">Do Dham</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="choose_yatra"
+                    id="ekdham"
+                    value="ekdham"
+                    required
+                  />
+                  <label class="form-check-label" for="ekdham">Ek Dham</label>
+                </div>
               </div>
 
+              <div>
+                <p class="fs-5 is_color_primary">
+                  Choose Taxi/Complete Package
+                </p>
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="taxi_or_package"
+                    id="taxi"
+                    value="taxi"
+                    required
+                  />
+                  <label class="form-check-label" for="taxi">Only Taxi</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="taxi_or_package"
+                    id="package"
+                    value="package"
+                    required
+                  />
+                  <label class="form-check-label" for="package"
+                    >Complete Package</label
+                  >
+                </div>
+              </div>
+              <div class="mt-4">
+                <textarea
+                  class="form-control"
+                  id="textAreaExample"
+                  rows="4"
+                  placeholder="Type your query (optional)"
+                ></textarea>
+              </div>
               <button
                 type="submit"
                 class="btn btn-primary d-block mx-auto btn-rounded fs-6 mt-4"
@@ -280,7 +372,6 @@ export default {
     url("/chardham-hero.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  height: 700px;
 }
 
 .chardham_hero div p {
@@ -299,5 +390,9 @@ thead {
   .chardham_hero {
     height: auto;
   }
+}
+
+.is_color_primary {
+  color: #2399c0;
 }
 </style>
