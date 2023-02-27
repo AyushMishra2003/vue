@@ -7,8 +7,26 @@
             <form-wizard
               class="rounded-7 w-100"
               v-if="!submitted"
-              @submit.prevent="submitEnquiryForm"
+              @onComplete="submitEnquiryForm"
             >
+              <div class="text-center">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="35"
+                  height="35"
+                  fill="currentColor"
+                  class="bi bi-car-front"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M4 9a1 1 0 1 1-2 0 1 1 0 0 1 2 0Zm10 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0ZM6 8a1 1 0 0 0 0 2h4a1 1 0 1 0 0-2H6ZM4.862 4.276 3.906 6.19a.51.51 0 0 0 .497.731c.91-.073 2.35-.17 3.597-.17 1.247 0 2.688.097 3.597.17a.51.51 0 0 0 .497-.731l-.956-1.913A.5.5 0 0 0 10.691 4H5.309a.5.5 0 0 0-.447.276Z"
+                  />
+                  <path
+                    d="M2.52 3.515A2.5 2.5 0 0 1 4.82 2h6.362c1 0 1.904.596 2.298 1.515l.792 1.848c.075.175.21.319.38.404.5.25.855.715.965 1.262l.335 1.679c.033.161.049.325.049.49v.413c0 .814-.39 1.543-1 1.997V13.5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-1.338c-1.292.048-2.745.088-4 .088s-2.708-.04-4-.088V13.5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-1.892c-.61-.454-1-1.183-1-1.997v-.413a2.5 2.5 0 0 1 .049-.49l.335-1.68c.11-.546.465-1.012.964-1.261a.807.807 0 0 0 .381-.404l.792-1.848ZM4.82 3a1.5 1.5 0 0 0-1.379.91l-.792 1.847a1.8 1.8 0 0 1-.853.904.807.807 0 0 0-.43.564L1.03 8.904a1.5 1.5 0 0 0-.03.294v.413c0 .796.62 1.448 1.408 1.484 1.555.07 3.786.155 5.592.155 1.806 0 4.037-.084 5.592-.155A1.479 1.479 0 0 0 15 9.611v-.413c0-.099-.01-.197-.03-.294l-.335-1.68a.807.807 0 0 0-.43-.563 1.807 1.807 0 0 1-.853-.904l-.792-1.848A1.5 1.5 0 0 0 11.18 3H4.82Z"
+                  />
+                </svg>
+              </div>
+              <h3 class="text-center mt-2 fw-bold">Local Booking</h3>
               <tab-content title="Trip Information" :selected="true">
                 <div class="form-group row">
                   <div class="col">
@@ -19,17 +37,6 @@
                       class="form-control"
                       placeholder="e.g; Kolkata"
                       v-model="form.data.fromCity"
-                      required
-                    />
-                  </div>
-                  <div class="col">
-                    <label for="toCity">To City</label>
-                    <input
-                      id="toCity"
-                      type="text"
-                      class="form-control"
-                      placeholder="e.g; Kolkata"
-                      v-model="form.data.toCity"
                       required
                     />
                   </div>
@@ -46,14 +53,58 @@
                     />
                   </div>
                   <div class="col">
-                    <label for="returnDate">Return Date</label>
+                    <label for="pickupTime">Pickup Time</label>
                     <input
-                      id="returnDate"
-                      type="date"
+                      id="pickupTime"
+                      type="time"
                       class="form-control"
-                      v-model="form.data.returnDate"
+                      v-model="form.data.pickupTime"
                       required
                     />
+                  </div>
+                  <div class="mt-4">
+                    <div class="form-check form-check-inline">
+                      <input
+                        v-model="form.data.packageName"
+                        class="form-check-input"
+                        type="radio"
+                        name="packageName"
+                        id="8/80"
+                        value="8/80"
+                        required
+                      />
+                      <label class="form-check-label" for="8/80"
+                        >8 hr/80 km</label
+                      >
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input
+                        v-model="form.data.packageName"
+                        class="form-check-input"
+                        type="radio"
+                        name="packageName"
+                        id="10/100"
+                        value="10/100"
+                        required
+                      />
+                      <label class="form-check-label" for="10/100"
+                        >10 hr/100 km</label
+                      >
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input
+                        v-model="form.data.packageName"
+                        class="form-check-input"
+                        type="radio"
+                        name="packageName"
+                        id="12/120"
+                        value="12/120"
+                        required
+                      />
+                      <label class="form-check-label" for="12/120"
+                        >12 hr/120 km</label
+                      >
+                    </div>
                   </div>
                 </div>
               </tab-content>
@@ -171,6 +222,7 @@ export default {
   },
   data() {
     return {
+      submitted: false,
       form: {
         name: "",
         email: "",
@@ -178,9 +230,9 @@ export default {
         query: "",
         data: {
           fromCity: "",
-          toCity: "",
           pickupDate: "",
-          returnDate: "",
+          pickupTime: "",
+          packageName: "",
         },
       },
     };
