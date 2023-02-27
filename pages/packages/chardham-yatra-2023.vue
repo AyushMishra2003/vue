@@ -77,7 +77,7 @@
                 <p class="fs-5 is_color_primary">Choose Yatra</p>
                 <div class="form-check form-check-inline">
                   <input
-                    v-model="form.yatra_type"
+                    v-model="form.data.yatra_type"
                     class="form-check-input"
                     type="radio"
                     name="choose_yatra"
@@ -91,7 +91,7 @@
                 </div>
                 <div class="form-check form-check-inline">
                   <input
-                    v-model="form.yatra_type"
+                    v-model="form.data.yatra_type"
                     class="form-check-input"
                     type="radio"
                     name="choose_yatra"
@@ -105,7 +105,7 @@
                 </div>
                 <div class="form-check form-check-inline">
                   <input
-                    v-model="form.yatra_type"
+                    v-model="form.data.yatra_type"
                     class="form-check-input"
                     type="radio"
                     name="choose_yatra"
@@ -117,7 +117,7 @@
                 </div>
                 <div class="form-check form-check-inline">
                   <input
-                    v-model="form.yatra_type"
+                    v-model="form.data.yatra_type"
                     class="form-check-input"
                     type="radio"
                     name="choose_yatra"
@@ -135,7 +135,7 @@
                 </p>
                 <div class="form-check form-check-inline">
                   <input
-                    v-model="form.package"
+                    v-model="form.data.package"
                     class="form-check-input"
                     type="radio"
                     name="taxi_or_package"
@@ -147,7 +147,7 @@
                 </div>
                 <div class="form-check form-check-inline">
                   <input
-                    v-model="form.package"
+                    v-model="form.data.package"
                     class="form-check-input"
                     type="radio"
                     name="taxi_or_package"
@@ -349,10 +349,10 @@ export default {
         email: "",
         phone_number: "",
         query: "",
-        yatra_type: "",
-        package: "",
         data: {
           date: "",
+          yatra_type: "",
+          package: "",
         },
       },
     };
