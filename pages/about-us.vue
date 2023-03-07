@@ -4,7 +4,7 @@
       <h2 class="fw-bold text-center has_logo_color text-uppercase">
         About Us
       </h2>
-      <p class="mt-4">
+      <p class="mt-4 text-center">
         Uttarakhand Cab Service (UCS) is one of the best leading Chauffeur
         Driven car providers head office in Dehradun with two branches in Pune &
         Noida. Currently, We are providing Taxi/car rental services in
@@ -15,7 +15,7 @@
         sure that you do not miss even a single moment to capture while you’re
         traveling with us.
       </p>
-      <p>HiWay72 is the parent company of UCS CAB</p>
+      <p class="text-center">HiWay72 is the parent company of UCS CAB</p>
     </section>
 
     <section class="container my-5 pb-5">
@@ -31,7 +31,13 @@
           </p>
         </div>
         <div class="col-md-6">
-          <nuxt-img preset="cover" src="/img/about.svg" alt="" class="img-fluid" width="80%" />
+          <nuxt-img
+            preset="cover"
+            src="/img/about.svg"
+            alt=""
+            class="img-fluid"
+            width="80%"
+          />
         </div>
       </div>
     </section>
@@ -39,7 +45,13 @@
     <section class="container my-5 pb-5">
       <div class="row">
         <div class="col-md-6">
-          <nuxt-img preset="cover" src="/img/about2.svg" alt="" class="img-fluid" width="80%" />
+          <nuxt-img
+            preset="cover"
+            src="/img/about2.svg"
+            alt=""
+            class="img-fluid"
+            width="80%"
+          />
         </div>
         <div class="col-md-6">
           <p>

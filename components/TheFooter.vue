@@ -3,7 +3,8 @@
     <section class="container-fluid px-md-5">
       <div class="row">
         <div class="col-md-3">
-          <nuxt-img preset="cover"
+          <nuxt-img
+            preset="cover"
             src="/img/logo/logo2.png"
             alt="Logo2"
             class="img-fluid"
@@ -26,7 +27,7 @@
               <NuxtLink to="/">Home</NuxtLink>
             </li>
             <li><NuxtLink to="#">About Us</NuxtLink></li>
-            <li><a href="#">Contact Us</a></li>
+            <li><NuxtLink to="/contact-us/">Contact Us</NuxtLink></li>
             <li>
               <NuxtLink to="/packages/chardham-yatra-2023/"
                 >Chardham Yatra 2023</NuxtLink
@@ -37,9 +38,9 @@
         <div class="col-md-3 mt-4 mt-md-0">
           <h5 class="text-white text-uppercase fw-bold">Services</h5>
           <ul class="list-unstyled mt-3 lh-lg">
-            <li><a href="#">Local Car Rental</a></li>
-            <li><a href="#">Outstation Car Rental</a></li>
-            <li><a href="#">Corporate Car Rental</a></li>
+            <li><NuxtLink to="#">Local Car Rental</NuxtLink></li>
+            <li><NuxtLink to="#">Outstation Car Rental</NuxtLink></li>
+            <li><NuxtLink to="#">Corporate Car Rental</NuxtLink></li>
 
             <li><a href="#">Airport/Railway Stn./Employee Transfer</a></li>
           </ul>
@@ -50,10 +51,16 @@
             <li><a href="#">Contact Us</a></li>
             <li><a href="#">Sitemap</a></li>
             <li>
-              <a href="https://www.facebook.com/ucscab/" target="_blank">
+              <a
+                href="https://www.facebook.com/UcsCabOfficial/"
+                target="_blank"
+              >
                 <i class="fab fa-facebook fa-lg has_color_custom"></i>
               </a>
-              <a href="https://www.instagram.com/ucs_cab/" target="_blank">
+              <a
+                href="https://www.instagram.com/ucscabofficial/?hl=en"
+                target="_blank"
+              >
                 <i class="fab fa-instagram fa-lg ms-2 has_color_custom"></i>
               </a>
             </li>
@@ -79,7 +86,11 @@
         href="https://wa.me/+919520801801"
         class="whatsapp_float"
         target="_blank"
-        ><nuxt-img preset="cover" src="/whatsapp.webp" alt="WhatsApp icon" class="img-fluid"
+        ><nuxt-img
+          preset="cover"
+          src="/whatsapp.webp"
+          alt="WhatsApp icon"
+          class="img-fluid"
       /></a>
     </section>
   </footer>

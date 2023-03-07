@@ -253,7 +253,7 @@ export default {
 <style scoped>
 .page_header {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("/bg_top.webp");
+    url("/airport-bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }

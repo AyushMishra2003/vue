@@ -5,65 +5,75 @@
       We offer domestic cabs, SUVs for outstation and city-taxi at best rates in
       the market
     </p>
-    <div class="row row-cols-1 row-cols-md-3 g-3 g-md-4 mt-3">
+    <div class="row row-cols-1 row-cols-md-4 g-2 mt-3">
       <div class="col">
         <div class="card">
-          <nuxt-img preset="cover"
-            src="/img/every-occasion/domestic.webp"
-            class="card-img-top"
-            alt="Domestic Cab"
-          />
-          <div class="card-body">
-            <div class="card-title">
-              <h5 class="text-uppercase">Domestic</h5>
+          <NuxtLink to="/services/local-car-rental/">
+            <nuxt-img
+              preset="cover"
+              src="/img/every-occasion/domestic.webp"
+              class="card-img-top"
+              alt="Domestic Cab"
+            />
+            <div class="card-body">
+              <div class="card-title">
+                <h6 class="text-uppercase text-dark">Local Car Rental</h6>
+              </div>
             </div>
-            <div class="card-text">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur
-              numquam iusto repellat maiores illum sed placeat fuga culpa! Cum
-              quis consequuntur praesentium earum laboriosam provident vero
-              quidem nulla libero est.
-            </div>
-          </div>
+          </NuxtLink>
         </div>
       </div>
       <div class="col">
         <div class="card">
-          <nuxt-img preset="cover"
-            src="/img/every-occasion/outstation.webp"
-            class="card-img-top"
-            alt="Out-Station Cab"
-          />
-          <div class="card-body">
-            <div class="card-title">
-              <h5 class="text-uppercase">Outstation</h5>
+          <NuxtLink to="/services/outstation-car-rental/">
+            <nuxt-img
+              preset="cover"
+              src="/img/every-occasion/outstation.webp"
+              class="card-img-top"
+              alt="Out-Station Cab"
+            />
+            <div class="card-body">
+              <div class="card-title">
+                <h6 class="text-uppercase text-dark">Outstation Car Rental</h6>
+              </div>
             </div>
-            <div class="card-text">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia
-              eum at est, saepe tenetur earum sed, fuga suscipit ab molestias
-              minima nisi repudiandae nostrum ratione! Harum eum hic doloremque
-              vel!
-            </div>
-          </div>
+          </NuxtLink>
         </div>
       </div>
       <div class="col">
         <div class="card">
-          <nuxt-img preset="cover"
-            src="/img/every-occasion/rental.webp"
-            class="card-img-top"
-            alt="Rental Cab"
-          />
-          <div class="card-body">
-            <div class="card-title">
-              <h5 class="text-uppercase">Rentals</h5>
+          <NuxtLink to="/services/railway-transfer/">
+            <nuxt-img
+              preset="cover"
+              src="/railway.jpg"
+              class="card-img-top"
+              alt="Rental Cab"
+            />
+            <div class="card-body">
+              <div class="card-title">
+                <h6 class="text-uppercase text-dark">
+                  Railway Station Transfer
+                </h6>
+              </div>
             </div>
-            <div class="card-text">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime,
-              error odio ratione eum minus ut sapiente, nulla quis unde facilis
-              ipsum, nihil pariatur autem quo harum architecto blanditiis labore
-              velit.
+          </NuxtLink>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <NuxtLink to="/services/airport-transfer/">
+            <nuxt-img
+              preset="cover"
+              src="/airport.jpg"
+              class="card-img-top"
+              alt="Rental Cab"
+            />
+            <div class="card-body">
+              <div class="card-title">
+                <h6 class="text-uppercase text-dark">Airport Transfer</h6>
+              </div>
             </div>
-          </div>
+          </NuxtLink>
         </div>
       </div>
     </div>

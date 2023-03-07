@@ -101,7 +101,7 @@
               </ul>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Contact Us</a>
+              <NuxtLink class="nav-link" to="/contact-us/">Contact Us</NuxtLink>
             </li>
           </ul>
           <div class="d-flex align-items-center">
@@ -114,7 +114,7 @@
               <i class="fa-solid fa-phone me-1 text-white"></i> +91 95208 01801
             </a>
             <a
-              href="#"
+              href="https://www.facebook.com/UcsCabOfficial/"
               class="btn btn-floating ms-2"
               target="_blank"
               role="button"
@@ -123,7 +123,7 @@
               <i class="fab fa-facebook-f fa-lg text-white"></i>
             </a>
             <a
-              href="#"
+              href="https://www.instagram.com/ucscabofficial/?hl=en"
               class="btn btn-floating ms-2 instagram"
               target="_blank"
               role="button"
