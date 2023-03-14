@@ -29,7 +29,7 @@ export default {
 
       // font
       {
-        href: "https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800;900;1000&display=swap",
+        href: "https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;600;700;800;900&family=Open+Sans:wght@300;400;500;600;700;800&display=swap",
         rel: "stylesheet",
       },
 
@@ -81,10 +81,7 @@ export default {
   generate: { fallback: "404.html" },
 
   // Modules: https://go.nuxtjs.dev/config-modules
-  modules: [
-    "@nuxtjs/sitemap",
-    "@nuxtjs/axios"
-  ],
+  modules: ["@nuxtjs/sitemap", "@nuxtjs/axios"],
 
   // sitemap
   sitemap: {

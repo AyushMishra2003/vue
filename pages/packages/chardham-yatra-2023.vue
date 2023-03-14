@@ -5,7 +5,7 @@
       <div class="container">
         <div class="row">
           <div class="col-md-6 my-auto d-none d-md-block">
-            <p class="text-white display-6 text-capitalize">
+            <p class="text-white display-3 fw-bold text-capitalize">
               book hassle free chardham yatra 2023 with UCS Cab
             </p>
             <a
@@ -309,7 +309,7 @@
             </tr>
             <tr>
               <th scope="row">Mini SUV</th>
-              <td>₹ 5500/ - Per Day</td>
+              <td>₹ 6000/ - Per Day</td>
             </tr>
             <tr>
               <th scope="row">SUV</th>
@@ -376,7 +376,7 @@ export default {
 
 <style scoped>
 .chardham_hero {
-  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url("/chardham-hero.jpg");
   background-size: cover;
   background-repeat: no-repeat;
