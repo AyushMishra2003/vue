@@ -361,7 +361,7 @@ export default {
     async submitEnquiryForm() {
       let that = this;
       await axios
-        .post("https://crm.nullstacktechnologies.com/ucs/enquiry/", this.form)
+        .post("", this.form)
         .then(function (response) {
           that.submitted = true;
         })

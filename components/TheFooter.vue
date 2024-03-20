@@ -71,13 +71,8 @@
     <hr class="text-white mx-md-5" />
     <section class="text-center copyright pb-3">
       <small class="has_color_custom"
-        >&#169; 2022 Copyright: <NuxtLink to="/" class="">UCS Cab</NuxtLink> |
-        Designed &amp; Developed by
-        <a
-          href="https://nullstacks.com/services/seo-company-kolkata/"
-          target="_blank"
-          >NullStack Technologies</a
-        ></small
+        >&#169; 2022 Copyright:
+        <NuxtLink to="/" class="">UCS Cab</NuxtLink></small
       >
     </section>
     <section>
