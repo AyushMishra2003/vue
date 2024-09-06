@@ -13,6 +13,7 @@
     "@nuxtjs/sitemap": "^2.4.0",
     "core-js": "^3.25.3",
     "nuxt": "^2.15.8",
+    "uninstall": "^0.0.0",
     "vue": "^2.7.10",
     "vue-server-renderer": "^2.7.10",
     "vue-step-wizard": "^0.1.17",
